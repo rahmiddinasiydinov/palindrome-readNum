@@ -67,15 +67,15 @@ readNum.addEventListener('submit', (e)=>{
         }
           let answer = [];
         for(let  i in finalAns){ 
-          if(i==0){
+          if(i==0 && finalAns[i]){
             answer.push(finalAns[i])
-          } else   if(i==1){
+          } else   if(i==1  && finalAns[i] ){
             answer.push(finalAns[i]+' ming ')
-          } else   if(i==2){
+          } else   if(i==2  && finalAns[i]){
             answer.push(finalAns[i]+' million ')
-          } else   if(i==3){
+          } else   if(i==3  && finalAns[i]){
             answer.push(finalAns[i]+' milliard ')
-          } else   if(i==4){
+          } else   if(i==4  && finalAns[i]){
             answer.push(finalAns[i]+' trillion ')
           }
         }
